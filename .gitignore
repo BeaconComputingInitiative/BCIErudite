@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# Model Checkpoints & Datasets (local-only)
+checkpoints/
+*.pt
+*.bin
+data/
+
+# Streamlit
+.streamlit/
