@@ -1,0 +1,8 @@
+{
+  "header": "Beacon Computing Initiative | Developer Seal: Chance Joaquin Boone (CJB)",
+  "max_messages": 128,
+  "max_message_chars": 50000,
+  "max_total_chars": 100000,
+  "max_request_bytes": 131072,
+  "max_http_connections": 8
+}
