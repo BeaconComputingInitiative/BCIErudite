@@ -1,0 +1,22 @@
+{
+  "header": "Beacon Computing Initiative | Developer Seal: Chance Joaquin Boone (CJB)",
+  "prepared_dir": "datasets/processed/curated",
+  "output_dir": "models/runs/first",
+  "architecture": {
+    "width": 128,
+    "layers": 4,
+    "heads": 4,
+    "context": 256
+  },
+  "device": "cpu",
+  "steps": 1000,
+  "batch_size": 4,
+  "learning_rate": 0.0003,
+  "weight_decay": 0.1,
+  "warmup_steps": 50,
+  "grad_clip": 1.0,
+  "eval_every": 100,
+  "seed": 42,
+  "objective": "all",
+  "cpu_threads": 2
+}

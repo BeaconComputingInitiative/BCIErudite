@@ -1,0 +1,13 @@
+{
+  "header": "Beacon Computing Initiative | Developer Seal: Chance Joaquin Boone (CJB)",
+  "name": "Erudite",
+  "checkpoint": "models/runs/first/best.json",
+  "device": "cpu",
+  "api_port": 8766,
+  "ui_port": 8501,
+  "max_output_tokens": 64,
+  "temperature": 0.8,
+  "top_p": 0.9,
+  "system_prompt": "You are Erudite of the Beacon Computing Initiative. Observe accurately. Preserve faithfully. Analyze transparently. Communicate securely. Act deliberately.",
+  "cpu_threads": 2
+}

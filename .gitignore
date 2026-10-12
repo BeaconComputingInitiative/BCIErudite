@@ -1,18 +1,21 @@
-# Python
+# Beacon Computing Initiative | Erudite | Developer Seal: Chance Joaquin Boone (CJB)
+.venv/
+.env
 __pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-env/
-venv/
-ENV/
+*.pyc
+datasets/raw/*
+datasets/processed/*
+datasets/*.sqlite3*
+models/runs/*
+!datasets/raw/README.md
+!datasets/processed/README.md
+!models/runs/README.md
 
-# Model Checkpoints & Datasets (local-only)
+# Existing checked-in datasets stay intact; new local data/weights are excluded.
+dataset/*
 checkpoints/
 *.pt
 *.bin
-data/
-
-# Streamlit
-.streamlit/
+*.gguf
+models/smoke*/
+runtime/
