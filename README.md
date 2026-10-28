@@ -2,6 +2,11 @@
 <!-- SHA-256 integrity record: docs/HYGIENE_SHA256SUMS -->
 
 # BCIErudite
+
+<p align="center">
+  <img src="assets/bcierudite-icon.svg" width="224" alt="BCIErudite — neural knowledge emblem" />
+</p>
+
 ### Sovereign Language Model Research & Engineering
 
 **Beacon Computing Initiative (BCI)** · **Developer Seal: CJB-DEV-2026**  
