@@ -3,6 +3,11 @@
 
 # BCIErudite — Sovereign Language Model Engineering
 
+<p align="center">
+  <img src="assets/bcierudite-icon.svg" width="224" alt="BCIErudite — neural knowledge emblem" />
+</p>
+
+
 **Beacon Computing Initiative**  
 **Developer Seal: CJB-DEV-2026**  
 **Project lead: Chance Joaquin Boone (CJB)**
