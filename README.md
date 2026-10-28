@@ -1,13 +1,43 @@
-# Erudite
+<!-- BEACON COMPUTING INITIATIVE | Project: BCIErudite | Developer Seal: CJB-DEV-2026 -->
+<!-- File SHA-256: see SHA256SUMS -->
+
+# BCIErudite — Sovereign Language Model Engineering
 
 **Beacon Computing Initiative**  
-**Developer Seal: Chance Joaquin Boone (CJB)**
+**Developer Seal: CJB-DEV-2026**  
+**Project lead: Chance Joaquin Boone (CJB)**
 
 Observe accurately. Preserve faithfully. Analyze transparently. Communicate securely. Act deliberately.
 
-Erudite is a local language-model project built from scratch: a native BPE tokenizer, a decoder-only Transformer, training and evaluation scripts, native checkpoint reconstruction, and a local streaming chat interface. It uses PyTorch primitives; no pretrained model weights, downloaded tokenizer, hosted inference endpoint, or LoRA base model is required.
+BCIErudite is an independently developed local language-model research project built from scratch: a native BPE tokenizer, a decoder-only Transformer, training and evaluation scripts, native checkpoint reconstruction, and a local streaming chat interface. It uses PyTorch primitives; no pretrained model weights, downloaded tokenizer, hosted inference endpoint, or LoRA base model is required.
 
 **Project status:** a working, tested engineering foundation. The synthetic training-to-generation path is verified on CPU. Useful learned conversational capability and full-corpus training are not claimed. No trained weights are checked in.
+
+## Engineering objectives and scope
+
+BCIErudite exists to own the complete language-model lifecycle: **data contracts → tokenizer → tensors → training/evaluation → immutable checkpoints → local inference → observable UI**. In the reconstruction branch, all inference must use the same model/tokenizer/checkpoint contract produced by training; a missing or incompatible checkpoint must be reported, never substituted with a fabricated answer.
+
+The project is deliberately **not a wrapper around Ollama, a hosted API, or a pretrained foundation model**. It does use established PyTorch tensor and autograd primitives. The starter network is intentionally small to make the mathematics, runtime, and regression tests inspectable before scaling.
+
+### Evidence-driven capability matrix
+
+| Dimension | Current evidence in this draft | Remaining acceptance work |
+| --- | --- | --- |
+| Native tokenizer / Transformer | CPU unit tests: round-trip, causality, caching, gradient flow | Larger context and hardware equivalence |
+| Training / checkpointing | Real synthetic optimizer steps, native reload, held-out evaluation | Approved full-corpus integration, recovery testing |
+| Streaming local inference | Unicode streams, context-limit and cancellation tests | Sustained throughput and latency measurements |
+| Security boundaries | Loopback binding, Host/Origin checks and bounded requests | Authentication, threat assessment and deployment hardening |
+| Useful conversational behavior | **Not demonstrated** by synthetic checks | Held-out real-world tasks and qualitative failure analysis |
+| Reproducibility | Source SHA-256 manifest and checkpoint identity checks | Re-run gates against the exact release commit |
+
+A historical validation report in this draft records **33 passing CPU tests on October 12, 2026**. This is evidence of the mechanics exercised in that environment, not a claim that the tests were rerun today. **No model weights are supplied.** Source hashes demonstrate byte integrity relative to a trusted manifest; the developer seal is attribution, not a cryptographic signature.
+
+### Repository and release policy
+
+- Preserve the original data and implementation history under documented boundaries; do not silently train on, rewrite, or publish the existing corpus.
+- A release is acceptable **if and only if** its exact commit passes source integrity, reproducible model tests, explicit data-governance checks, measured performance targets and security criteria appropriate to its stated deployment scope.
+- Record both **verified** and **unverified** behavior. Test success on a tiny synthetic language task does not establish language understanding, reliability, or general intelligence.
+- Keep local-only services on loopback until authentication and exposure controls are separately designed and tested.
 
 ## Get started
 
@@ -15,8 +45,9 @@ Python 3.11+ is required. For a CPU installation:
 
 ```bash
 # Beacon Computing Initiative | Developer Seal: Chance Joaquin Boone (CJB)
-git clone https://github.com/BeaconComputingInitiative/bci-sovereign-engine.git
-cd bci-sovereign-engine
+git clone https://github.com/BeaconComputingInitiative/BCIErudite.git
+cd BCIErudite
+git switch --track origin/codex/erudite-complete-project
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install 'torch>=2.4,<3' --index-url https://download.pytorch.org/whl/cpu
