@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- BEACON COMPUTING INITIATIVE | BCIErudite | Developer Seal: CJB-DEV-2026 -->
+<!-- Created for BCIErudite; SHA-256: see docs/HYGIENE_SHA256SUMS -->
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">BCIErudite — Neural Knowledge Emblem</title>
+  <desc id="desc">Cerulean neural-network brain rising from a luminous open book inside an orbital ring on an onyx field.</desc>
+  <defs>
+    <radialGradient id="onyx"><stop offset="0" stop-color="#09223d"/><stop offset=".7" stop-color="#050e1c"/><stop offset="1" stop-color="#01050c"/></radialGradient>
+    <linearGradient id="ice" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#edfcff"/><stop offset=".45" stop-color="#5ddfff"/><stop offset="1" stop-color="#1470ed"/></linearGradient>
+    <linearGradient id="silver" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f0fbff"/><stop offset=".48" stop-color="#8baed1"/><stop offset="1" stop-color="#125085"/></linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="512" height="512" rx="76" fill="url(#onyx)"/>
+  <circle cx="256" cy="256" r="221" fill="none" stroke="#123b70" stroke-width="18"/>
+  <circle cx="256" cy="256" r="220" fill="none" stroke="url(#silver)" stroke-width="5"/>
+  <circle cx="256" cy="256" r="193" fill="none" stroke="#1a80c9" stroke-width="1.6" opacity=".8"/>
+  <path d="M64 255 H111 M401 255 H448 M256 63 V105 M256 408 V449" stroke="#17bfff" stroke-width="2" opacity=".8"/>
+  <g fill="#8ff1ff" stroke="#087ce6" stroke-width="3" filter="url(#glow)">
+    <circle cx="256" cy="66" r="8"/><circle cx="256" cy="447" r="7"/>
+    <circle cx="66" cy="255" r="9"/><circle cx="446" cy="255" r="9"/>
+    <circle cx="121" cy="122" r="6"/><circle cx="391" cy="122" r="6"/>
+    <circle cx="121" cy="390" r="6"/><circle cx="391" cy="390" r="6"/>
+  </g>
+  <path d="M255 150 C234 130 211 130 193 148 C163 144 142 161 139 183 C118 188 111 215 124 237 C113 257 126 278 150 282 C155 304 180 313 201 301 C225 307 244 294 255 280 Z" fill="#062a50" stroke="url(#ice)" stroke-width="4" filter="url(#glow)"/>
+  <path d="M257 150 C278 130 301 130 319 148 C349 144 370 161 373 183 C394 188 401 215 388 237 C399 257 386 278 362 282 C357 304 332 313 311 301 C287 307 268 294 257 280 Z" fill="#062a50" stroke="url(#ice)" stroke-width="4" filter="url(#glow)"/>
+  <path d="M256 145 V341" stroke="#b6faff" stroke-width="4" filter="url(#glow)"/>
+  <g fill="none" stroke="#48cfff" stroke-width="2.2" opacity=".85">
+    <path d="M256 169 224 168 203 193 171 180 151 215 184 241 154 263 187 281 217 259 245 274"/>
+    <path d="M256 204 231 228 203 193 184 241 217 259 201 301"/>
+    <path d="M256 169 288 168 309 193 341 180 361 215 328 241 358 263 325 281 295 259 267 274"/>
+    <path d="M256 204 281 228 309 193 328 241 295 259 311 301"/>
+    <path d="M256 253 229 283 210 294 M256 253 283 283 302 294"/>
+  </g>
+  <g fill="#a9f9ff" stroke="#35c7ff" stroke-width="2" filter="url(#glow)">
+    <circle cx="224" cy="168" r="5"/><circle cx="203" cy="193" r="5"/><circle cx="171" cy="180" r="5"/><circle cx="151" cy="215" r="5"/><circle cx="184" cy="241" r="5"/><circle cx="154" cy="263" r="5"/><circle cx="187" cy="281" r="5"/><circle cx="217" cy="259" r="5"/><circle cx="231" cy="228" r="5"/>
+    <circle cx="288" cy="168" r="5"/><circle cx="309" cy="193" r="5"/><circle cx="341" cy="180" r="5"/><circle cx="361" cy="215" r="5"/><circle cx="328" cy="241" r="5"/><circle cx="358" cy="263" r="5"/><circle cx="325" cy="281" r="5"/><circle cx="295" cy="259" r="5"/><circle cx="281" cy="228" r="5"/>
+  </g>
+  <g stroke-linejoin="round">
+    <path d="M255 384 Q202 350 106 352 L113 384 Q202 376 255 415Z" fill="#06244a" stroke="#6bdfff" stroke-width="3"/>
+    <path d="M257 384 Q310 350 406 352 L399 384 Q310 376 257 415Z" fill="#06244a" stroke="#6bdfff" stroke-width="3"/>
+    <path d="M255 377 Q191 338 106 349 Q173 360 255 405Z" fill="url(#silver)" stroke="#ebffff" stroke-width="3"/>
+    <path d="M257 377 Q321 338 406 349 Q339 360 257 405Z" fill="url(#silver)" stroke="#ebffff" stroke-width="3"/>
+    <path d="M255 404 Q194 389 112 386 M257 404 Q318 389 400 386" fill="none" stroke="#1a8ce8" stroke-width="3"/>
+    <path d="M256 326 V401" stroke="#a8f6ff" stroke-width="4" filter="url(#glow)"/>
+    <path d="M235 409 Q256 421 277 409" stroke="#e3fbff" stroke-width="4" fill="none"/>
+  </g>
+  <g fill="#35cfff" filter="url(#glow)">
+    <rect x="230" y="328" width="5" height="6" rx="1"/><rect x="247" y="317" width="6" height="10" rx="1"/>
+    <rect x="267" y="325" width="7" height="7" rx="1"/><rect x="286" y="335" width="5" height="5" rx="1"/>
+    <rect x="215" y="342" width="5" height="5" rx="1"/>
+  </g>
+</svg>
